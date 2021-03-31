@@ -1,7 +1,7 @@
 ---
 
 - name: Start Redis container
-  docker_container:
+  community.general.docker_container:
     name: "{{ REDIS_CONTAINER_NAME }}"
     image: redis
     state: started
