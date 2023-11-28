@@ -1,4 +1,4 @@
 ---
 
-REDIS_CONTAINER_NAME: redis
-DOCKER_NETWORK_NAME: custom-bridge
+redis_container_name: redis
+docker_network_name: custom-bridge

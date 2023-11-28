@@ -11,8 +11,8 @@ Use it on a machine setup with ansible role sleif.docker.
 Role Variables
 --------------
 
-- REDIS_CONTAINER_NAME
-- DOCKER_NETWORK_NAME (can be defined in sleif.docker)
+- redis_container_name
+- docker_network_name (can be defined in sleif.docker)
 
 Dependencies
 ------------
@@ -26,10 +26,10 @@ Example Playbook
     - hosts: "server"
       user: root
       vars:
-        DOCKER_NETWORK_NAME: 'custom_docker_network'
+        docker_network_name: 'custom_docker_network'
       roles:
         - { role: sleif.redis_docker, tags: "redis_docker",
-                                      REDIS_CONTAINER_NAME: "redis_for_cusom_service" }
+                                      redis_container_name: "redis_for_cusom_service" }
 
 License
 -------
